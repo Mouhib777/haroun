@@ -9,6 +9,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  bool isChecked = false;
   @override
   Widget build(BuildContext context) {
     //screen height l mawjoud fi figma = 722
@@ -111,6 +112,34 @@ class _LoginScreenState extends State<LoginScreen> {
                             )),
                       ),
                     ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: screenHeight * 0.04,
+              ),
+              Row(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Checkbox(
+                        value: isChecked,
+                        onChanged: (bool? value) {
+                          setState(() {
+                            isChecked = value!;
+                          });
+                        },
+                      ),
+                      Text(
+                        'Remember\nPassword',
+                        style: GoogleFonts.roboto(color: Colors.white, 
+                        fontSize: 13 , 
+                        fontWeight: FontWeight.w400
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               )
