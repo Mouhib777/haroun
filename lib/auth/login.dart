@@ -162,6 +162,18 @@ class _LoginScreenState extends State<LoginScreen> {
                     ],
                   ),
                 ],
+              ),
+              SizedBox(
+                height: screenHeight * 0.1,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Text(
+                    "button t7t'ha houni", // w taaml wrap with Inkwell(is2el omar tw ikolk kifeh) besh trod'ha clickable
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ],
               )
             ],
           ),
