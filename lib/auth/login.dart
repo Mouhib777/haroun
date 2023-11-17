@@ -67,7 +67,10 @@ class _LoginScreenState extends State<LoginScreen> {
                         decoration: InputDecoration(
                             border: InputBorder.none,
                             hintText: "Email",
-                            hintStyle: GoogleFonts.roboto(color: Colors.white),
+                            hintStyle: GoogleFonts.roboto(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w400,
+                                fontSize: 15),
                             prefixIcon: Icon(
                               Icons.email_outlined,
                               color: Colors.white,
@@ -98,7 +101,10 @@ class _LoginScreenState extends State<LoginScreen> {
                         decoration: InputDecoration(
                             border: InputBorder.none,
                             hintText: "Password",
-                            hintStyle: GoogleFonts.roboto(color: Colors.white),
+                            hintStyle: GoogleFonts.roboto(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w400,
+                                fontSize: 15),
                             prefixIcon: Icon(
                               Icons.lock_outline,
                               color: Colors.white,
