@@ -132,13 +132,33 @@ class _LoginScreenState extends State<LoginScreen> {
                           });
                         },
                       ),
-                      Text(
-                        'Remember\nPassword',
-                        style: GoogleFonts.roboto(color: Colors.white, 
-                        fontSize: 13 , 
-                        fontWeight: FontWeight.w400
-                        ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Remember',
+                            style: GoogleFonts.roboto(
+                                color: Colors.white,
+                                fontSize: 13,
+                                fontWeight: FontWeight.w400),
+                          ),
+                          Text(
+                            'Password',
+                            style: GoogleFonts.roboto(
+                                color: Colors.white,
+                                fontSize: 13,
+                                fontWeight: FontWeight.w400),
+                          ),
+                        ],
                       ),
+                      SizedBox(
+                        width: screenWidth * 0.3,
+                      ),
+                      Text(
+                        "Forgot\nPassword?",
+                        style: GoogleFonts.roboto(
+                            color: Color(0XFF9155FD), fontSize: 13),
+                      )
                     ],
                   ),
                 ],
